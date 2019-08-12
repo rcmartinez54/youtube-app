@@ -3,18 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <title>YouTube Video Search App</title>
+        <title>National Park Search App</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
         <div class="app-container">
             <header class="header">
-                <h1>YouTube Video Locator</h1>
+                <h1>Search National Parks In Your State</h1>
             </header>
             <section id="query">
                 <form id="js-form">
-                    <label for="search-term">Search Term</label>
-                    <input type="text" name="search-term" id="js-search-term" required>
+                    <label for="search-state">Enter State</label>
+                    <input type="text" name="search-state" id="js-search-state" required>
                     <label for="max-results">Maximum Number of Results</label>
+                    <input type="number" name="max-results" id="js-max-results" value="10">
                     <input type="submit" value="Find them!">
                 </form>
                 <p id="js-error-msg" class="error-msg"></p>
@@ -22,7 +24,7 @@
             <section id="results" class="hidden">
                 <h2>Here Ya Go!</h2>
                 <ul id="results-list">
-                    
+
                 </ul>
             </section>
         </div>
