@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>YouTube Video Search App</title>
+    </head>
+    <body>
+        <div class="app-container">
+            <header class="header">
+                <h1>YouTube Video Locator</h1>
+            </header>
+            <section id="query">
+                <form id="js-form">
+                    <label for="search-term">Search Term</label>
+                    <input type="text" name="search-term" id="js-search-term" required>
+                    <label for="max-results">Maximum Number of Results</label>
+                    <input type="submit" value="Find them!">
+                </form>
+                <p id="js-error-msg" class="error-msg"></p>
+            </section>
+            <section id="results" class="hidden">
+                <h2>Here Ya Go!</h2>
+                <ul id="results-list">
+                    
+                </ul>
+            </section>
+        </div>
+        
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
